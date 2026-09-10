@@ -1,2 +1,1 @@
-# website-ia
-Site totalmente funcional sobre Inteligência Artificial
+Faça um site totalmente funcional sobre IA

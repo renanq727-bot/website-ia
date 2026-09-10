@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Inteligência Artificial - Seu Portal Completo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🤖 IA Hub</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#aplicacoes">Aplicações</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#interativo">Interativo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Mundo da IA</h1>
+            <p>Descubra como a Inteligência Artificial está transformando o futuro</p>
+            <button class="btn btn-primary" onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'})">Explorar Agora</button>
+        </div>
+        <div class="hero-animation">
+            <div class="cube"></div>
+        </div>
+    </section>
+
+    <!-- Sobre IA -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>O que é Inteligência Artificial?</h2>
+            <div class="sobre-grid">
+                <div class="sobre-card">
+                    <div class="icon">🧠</div>
+                    <h3>Aprendizado de Máquina</h3>
+                    <p>Sistemas que aprendem e melhoram através de experiências sem serem explicitamente programados.</p>
+                </div>
+                <div class="sobre-card">
+                    <div class="icon">🤖</div>
+                    <h3>Deep Learning</h3>
+                    <p>Redes neurais profundas que imitam o funcionamento do cérebro humano para resolver problemas complexos.</p>
+                </div>
+                <div class="sobre-card">
+                    <div class="icon">💬</div>
+                    <h3>Processamento de Linguagem</h3>
+                    <p>Tecnologia que permite máquinas compreender, interpretar e gerar linguagem natural.</p>
+                </div>
+                <div class="sobre-card">
+                    <div class="icon">👁️</div>
+                    <h3>Visão Computacional</h3>
+                    <p>Capacidade de máquinas interpretarem e analisarem imagens e vídeos como humanos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aplicações -->
+    <section id="aplicacoes" class="aplicacoes">
+        <div class="container">
+            <h2>Aplicações da IA</h2>
+            <div class="aplicacoes-grid">
+                <div class="app-card">
+                    <h3>🏥 Saúde</h3>
+                    <p>Diagnóstico de doenças, desenvolvimento de medicamentos e medicina personalizada.</p>
+                </div>
+                <div class="app-card">
+                    <h3>🚗 Automotiva</h3>
+                    <p>Carros autônomos, detecção de colisão e sistemas de segurança inteligentes.</p>
+                </div>
+                <div class="app-card">
+                    <h3>💼 Negócios</h3>
+                    <p>Análise de dados, previsão de tendências e automação de processos.</p>
+                </div>
+                <div class="app-card">
+                    <h3>🎮 Entretenimento</h3>
+                    <p>Recomendação de conteúdo, geração de games e criação de arte digital.</p>
+                </div>
+                <div class="app-card">
+                    <h3>🏦 Finanças</h3>
+                    <p>Detecção de fraudes, trading automático e análise de crédito.</p>
+                </div>
+                <div class="app-card">
+                    <h3>🌍 Meio Ambiente</h3>
+                    <p>Previsão do clima, conservação de espécies e eficiência energética.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias" class="tecnologias">
+        <div class="container">
+            <h2>Principais Tecnologias e Frameworks</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h4>Python</h4>
+                    <p>Linguagem mais popular para IA e Machine Learning</p>
+                </div>
+                <div class="tech-card">
+                    <h4>TensorFlow</h4>
+                    <p>Framework de código aberto do Google para deep learning</p>
+                </div>
+                <div class="tech-card">
+                    <h4>PyTorch</h4>
+                    <p>Framework flexível para pesquisa e produção em IA</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Keras</h4>
+                    <p>API de alto nível para construir redes neurais</p>
+                </div>
+                <div class="tech-card">
+                    <h4>OpenAI GPT</h4>
+                    <p>Modelos de linguagem grandes para processamento de texto</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Scikit-learn</h4>
+                    <p>Biblioteca para algoritmos de machine learning clássicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa -->
+    <section id="interativo" class="interativo">
+        <div class="container">
+            <h2>Teste um Modelo Simples de IA</h2>
+            <div class="interactive-demo">
+                <div class="demo-box">
+                    <h3>Classificador de Sentimentos</h3>
+                    <p>Digite um texto e veja como a IA o classifica:</p>
+                    <textarea id="textInput" placeholder="Digite algo aqui..."></textarea>
+                    <button class="btn btn-secondary" onclick="classificarSentimento()">Analisar</button>
+                    <div id="resultado" class="resultado"></div>
+                </div>
+                <div class="demo-box">
+                    <h3>Preditor de Números</h3>
+                    <p>Digite um número e veja a sequência de Fibonacci:</p>
+                    <input type="number" id="numberInput" placeholder="Digite um número..." min="1" max="20">
+                    <button class="btn btn-secondary" onclick="calcularFibonacci()">Calcular</button>
+                    <div id="resultadoNumero" class="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3>+1 Bilhão</h3>
+                <p>Pessoas usam IA diariamente</p>
+            </div>
+            <div class="stat-item">
+                <h3>$500B</h3>
+                <p>Mercado de IA em 2024</p>
+            </div>
+            <div class="stat-item">
+                <h3>70%</h3>
+                <p>Empresas usam alguma solução de IA</p>
+            </div>
+            <div class="stat-item">
+                <h3>38%</h3>
+                <p>Crescimento anual do setor</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+        <div class="container">
+            <h2>História da IA</h2>
+            <div class="timeline-content">
+                <div class="timeline-item">
+                    <div class="timeline-date">1950</div>
+                    <div class="timeline-text">
+                        <h4>Teste de Turing</h4>
+                        <p>Alan Turing propõe o famoso teste para medir inteligência de máquinas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1974-1980</div>
+                    <div class="timeline-text">
+                        <h4>Primeiro Inverno da IA</h4>
+                        <p>Período de desapontamento e redução de investimentos em IA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1997</div>
+                    <div class="timeline-text">
+                        <h4>Deep Blue vence Kasparov</h4>
+                        <p>Computador IBM Deep Blue vence o campeão mundial de xadrez.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2012</div>
+                    <div class="timeline-text">
+                        <h4>Revolução do Deep Learning</h4>
+                        <p>AlexNet ganha ImageNet, marcando o início do boom do deep learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-text">
+                        <h4>AlphaGo vence Lee Sedol</h4>
+                        <p>AlphaGo derrota campeão de Go, provando avanço significativo em IA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-text">
+                        <h4>ChatGPT e IA Generativa</h4>
+                        <p>Lançamento do ChatGPT marca explosão de interesse em IA generativa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba Atualizações sobre IA</h2>
+            <form class="newsletter-form" onsubmit="inscreverNewsletter(event)">
+                <input type="email" placeholder="Seu email..." required>
+                <button type="submit" class="btn btn-primary">Inscrever</button>
+            </form>
+            <div id="mensagemNewsletter" class="mensagem"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IA Hub</h4>
+                    <p>Seu portal completo sobre Inteligência Artificial e Machine Learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#aplicacoes">Aplicações</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">🐦 Twitter</a>
+                        <a href="#" class="social-icon">👥 LinkedIn</a>
+                        <a href="#" class="social-icon">📘 Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IA Hub. Todos os direitos reservados. Desenvolvido com ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
